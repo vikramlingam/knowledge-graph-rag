@@ -3,8 +3,8 @@ from typing import List, Generator
 
 logger = logging.getLogger(__name__)
 
-# Phi-3-mini has 4k context, but we need to leave room for generation
-MAX_CONTEXT_CHARS = 2000  # Limit context to ~500 tokens
+# Qwen 2.5 limits
+MAX_CONTEXT_CHARS = 2000 
 
 
 def get_llm():
