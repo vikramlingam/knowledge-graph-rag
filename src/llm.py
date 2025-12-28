@@ -1,8 +1,3 @@
-"""
-LLM module for RAG operations using local Phi-3-mini model.
-Handles query expansion, intent classification, and response generation.
-"""
-
 import logging
 from typing import List, Generator
 
