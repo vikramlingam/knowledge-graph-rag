@@ -1,8 +1,3 @@
-"""
-Knowledge Graph extraction module.
-Extracts entities and relationships from document text.
-"""
-
 import logging
 from typing import List, Dict, Tuple, Set
 from collections import defaultdict
