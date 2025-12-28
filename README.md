@@ -65,8 +65,8 @@ These are saved in the `models/` folder inside this directory. You can delete th
 Use this section if you want to modify the code.
 
 -   **Frontend**: Built with `NiceGUI`. It handles the file uploads and the chat interface.
--   **Graph Rendering**: We use `Vis.js` injected via JavaScript. The physics simulation uses the `ForceAtlas2Based` solver for stability.
--   **LLM**: The model runs on the CPU using `transformers`. We use the `0.5B` version of Qwen because it is fast enough to run on standard laptops without a GPU.
+-   **Graph Rendering**: Used `Vis.js` injected via JS. The physics simulation uses the `ForceAtlas2Based` solver for stability.
+-   **LLM**: The model runs on the CPU using `transformers`. I used the `0.5B` version of Qwen because it is fast enough to run on standard laptops without a GPU. But you can replace this with any LLM of your choice.
 -   **Storage**:
     -   `vector_store`: In-memory FAISS index.
     -   `graph_data`: JSON structure built on the fly with NetworkX logic.
