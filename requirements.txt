@@ -1,0 +1,22 @@
+# Core dependencies
+numpy>=1.24.0
+faiss-cpu>=1.7.0
+
+# Document processing
+PyMuPDF>=1.23.0
+pdfplumber>=0.10.0
+python-docx>=1.0.0
+spacy>=3.0.0
+
+# Local ML models
+sentence-transformers>=2.2.0
+transformers>=4.40.0
+huggingface-hub>=0.23.0
+torch>=2.0.0
+accelerate>=0.26.0
+
+# Web UI
+nicegui>=2.0
+
+# Utilities
+tqdm>=4.65.0

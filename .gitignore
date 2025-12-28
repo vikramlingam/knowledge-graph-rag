@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Local RAG Data & Models
+# Ignore actual model weights (too large for git)
+models/llm/
+models/embeddings/
+# But keep the folder structure documentation
+!models/README.md
+
+# Ignore local data
+data/
