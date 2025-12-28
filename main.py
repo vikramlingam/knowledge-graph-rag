@@ -84,23 +84,20 @@ def prepare_rag_prompt_sync(query: str, vs: Tuple[Any, List[dict]]) -> Tuple[str
         
         context = "\n\n".join(context_parts)
         
-        system_prompt = f"""You are an assistant that answers questions based on the provided documents.
-You MUST provide the Source and Page Number for every single statement you make.
-
+        system_prompt = f"""You are an assistant. Answer the user's question using the Context below.
+        
 Context:
 {context}
 
-CRITICAL RULES:
-1. Answer the question using ONLY the context above.
-2. Every sentence MUST end with a citation.
-3. Citation Format: [Source: Filename (Page X)]
-4. If the answer is not in the context, say "I cannot find the answer in the documents."
+Instructions:
+1. Write a clear, detailed answer to the question based on the text above.
+2. After your answer, include the Source and Page Number.
 
 Example:
-The tax rate is 9% [Source: Law_2022.pdf (Page 5)]. This applies to taxable income [Source: Guidelines.pdf (Page 12)].
+The corporate tax rate is 9%. [Source: Law.pdf (Page 5)]
 
 Question: {query}
-Answer (with citations):"""
+Answer:"""
 
 
         
