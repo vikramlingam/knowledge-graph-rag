@@ -1,7 +1,7 @@
 import logging
 from typing import List, Dict, Tuple, Set
 from collections import defaultdict
-import json # Added for the new get_vis_js_html
+import json
 
 logger = logging.getLogger(__name__)
 
