@@ -16,11 +16,9 @@ venv/
 .vscode/
 .idea/
 
-# Local RAG Data & Models
-# Ignore actual model weights (too large for git)
+# Local RAG Data & Models. Not uploaded to Git as the model sizes are too large.
 models/llm/
 models/embeddings/
-# But keep the folder structure documentation
 !models/README.md
 
 # Ignore local data
