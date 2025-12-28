@@ -54,10 +54,7 @@ def extract_from_pdf(uploaded_file) -> List[Dict[str, Any]]:
                             table_text += f"\n\n**Table on Page {page_num + 1}:**\n{md_table}\n"
 
                 # Extract regular text using PyMuPDF (faster and often better for layout)
-                # We re-open with fitz because pdfplumber object is different
                 # Ideally we could just use pdfplumber for everything but fitz is robust.
-                # For simplicity in this POC, let's stick to pdfplumber for text too to avoid re-reading stream issues
-                # or just use pdfplumber text extraction which is also good.
                 
                 text = page.extract_text()
                 
