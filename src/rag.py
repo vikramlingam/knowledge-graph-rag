@@ -1,8 +1,3 @@
-"""
-RAG (Retrieval Augmented Generation) module using local SentenceTransformer embeddings.
-Uses all-MiniLM-L6-v2 for lightweight, CPU-efficient embeddings.
-"""
-
 import faiss
 import numpy as np
 import logging
