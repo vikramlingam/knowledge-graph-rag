@@ -26,7 +26,7 @@ def get_models_dir() -> Path:
 def check_models_installed() -> dict:
     """Check which models are installed."""
     embeddings_dir = MODELS_DIR / "embeddings"
-    llm_dir = MODELS_DIR / "llm" / "phi-3-mini"
+    llm_dir = MODELS_DIR / "llm" / "Qwen2.5-0.5B-Instruct"
     
     return {
         "embeddings": embeddings_dir.exists() and list(embeddings_dir.glob("*")),
