@@ -1,7 +1,3 @@
-"""
-Utility functions for the RAG application.
-"""
-
 import logging
 from pathlib import Path
 
